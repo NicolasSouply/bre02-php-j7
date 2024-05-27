@@ -1,29 +1,28 @@
 <?php
-session_start();
-
-
-
+    session_start();
 ?>
 
 <!doctype html>
 <html lang="fr">
-<head>
-    <meta charset="utf-8" />
-    <title>Choisir un pseudo</title>
-    <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-    <h1>Choisissez votre pseudo</h1>
-    <form action="nickname.php" method="post">
-        <fieldset>
-            <label for="pseudo">Pseudo :</label>
-            <input type="text" name="pseudo" id="pseudo" required>
-        </fieldset>
-        <fieldset>
-            <button type="submit">Envoyer</button>
-        </fieldset>
-    </form>
-
-<a href="logout.php">Déconnexion</a>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Exercices sessions</title>
+    </head>
+    <body>
+        <form action="nickname.php" method="post">
+            <fieldset>
+                <label for="nickname">
+                    Pseudo
+                </label>
+                <input type="text" name="nickname" id="nickname" />
+            </fieldset>
+            <fieldset>
+                <button type="submit">Envoyer</button>
+            </fieldset>
+        </form>
+        <a href="logout.php">Déconnexion</a>
+    </body>
 </html>
